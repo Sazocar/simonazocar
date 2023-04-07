@@ -5,8 +5,8 @@ const Description = ({ openModal }) => {
     <div
       className={
         openModal
-          ? 'opacity-25 blur container mt-20 mx-auto px-10 lg:px-36'
-          : 'bg-navy container mt-20 mx-auto px-10 lg:px-36'
+          ? 'h-screen flex flex-col justify-center opacity-25 blur container mx-auto px-10 lg:px-36'
+          : 'h-screen flex flex-col justify-center bg-navy container mx-auto px-10 lg:px-36'
       }
     >
       <h3 className='code text-green text-base sm:text-xl'>Hi, my name is</h3>
