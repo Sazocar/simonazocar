@@ -11,8 +11,13 @@ module.exports = {
   theme: {
     extend: {
       colors: {
+        'white': '#e6f1ff',
+        'lightest-slate': '#ccd6f6',
+        'light-slate': '#a8b2d1',
+        'slate': '#8892b0',
         'navy': '#0a192f',
-        'green': '#64ffda'
+        'lightest-navy': '#233554',
+        'green': '#79F7DA'
       },
     },
   },
