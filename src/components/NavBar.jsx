@@ -23,7 +23,7 @@ const NavBar = ({ openModal, setOpenModal }) => {
     <Disclosure as='nav' className='p-1 bg-navy'>
       {({ open }) => (
         <>
-          <div className='mx-auto py-2 max-w-7xl px-4 sm:px-6 lg:px-8 justify-between'>
+          <div className='w-full mx-auto py-2 px-4 sm:px-6 lg:px-8 justify-between'>
             <div className='relative flex h-16 items-center justify-between'>
               <div className='absolute inset-y-0 right-0 flex items-center sm:hidden'>
                 {/* Mobile menu button*/}
@@ -70,7 +70,7 @@ const NavBar = ({ openModal, setOpenModal }) => {
                         href={item.href}
                         className={classNames(
                           item.current
-                            ? 'bg-gray-900 text-white'
+                            ? 'text-white'
                             : 'text-gray-300 hover:text-green',
                           'code flex sm:justify-center rounded-md px-3 py-2 text-sm font-medium'
                         )}
@@ -104,7 +104,7 @@ const NavBar = ({ openModal, setOpenModal }) => {
                   href={item.href}
                   className={classNames(
                     item.current
-                      ? 'bg-gray-900 text-white'
+                      ? 'text-white'
                       : 'sm:flex sm:items-center sm:justify-center text-gray-300 hover:text-green',
                     'sm:flex sm:flex-column sm:justify-center code block rounded-md px-3 py-2 text-base font-medium'
                   )}
