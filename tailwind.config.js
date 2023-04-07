@@ -17,7 +17,9 @@ module.exports = {
         'slate': '#8892b0',
         'navy': '#0a192f',
         'lightest-navy': '#233554',
-        'green': '#79F7DA'
+        'dark-navy': '#112240',
+        'green': '#79F7DA',
+        'hover-color': '#133040'
       },
     },
   },

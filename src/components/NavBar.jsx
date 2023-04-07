@@ -8,14 +8,17 @@ const navigation = [
   { name: 'Experience', href: '#', current: false },
   { name: 'Work', href: '#', current: false },
   { name: 'Contact', href: '#', current: false },
-  { name: <ResumeButton /> }
+  { name: <ResumeButton /> },
 ]
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
 }
 
-const NavBar = () => {
+const NavBar = ({ openModal, setOpenModal }) => {
+  const toggleModal = () => {
+    setOpenModal((previous) => !previous)
+  }
   return (
     <Disclosure as='nav' className='p-1 bg-navy'>
       {({ open }) => (
@@ -24,7 +27,10 @@ const NavBar = () => {
             <div className='relative flex h-16 items-center justify-between'>
               <div className='absolute inset-y-0 right-0 flex items-center sm:hidden'>
                 {/* Mobile menu button*/}
-                <Disclosure.Button className='inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white'>
+                <Disclosure.Button
+                  onClick={toggleModal}
+                  className='inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white'
+                >
                   <span className='sr-only'>Open main menu</span>
                   {open ? (
                     <XMarkIcon
@@ -83,7 +89,13 @@ const NavBar = () => {
             </div>
           </div>
 
-          <Disclosure.Panel className='sm:hidden text-center'>
+          <Disclosure.Panel
+            className={
+              openModal
+                ? 'z-30 h-1/6 absolute bg-navy w-full sm:hidden text-center bg-navy'
+                : 'z-30 h-1/6 absolute bg-navy w-full sm:hidden text-center bg-dark-navy'
+            }
+          >
             <div className='2xl:code sm:flex sm:items-center sm:justify-center space-y-1 px-2 pb-3 pt-2'>
               {navigation.map((item) => (
                 <Disclosure.Button
@@ -109,12 +121,6 @@ const NavBar = () => {
   )
 }
 
-
-
-
-
-
-
-
-
 export default NavBar
+
+

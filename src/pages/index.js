@@ -1,8 +1,12 @@
+import { useState } from 'react'
 import Description from '@/components/Description'
 import NavBar from '@/components/NavBar'
 import Head from 'next/head'
 
 export default function Home() {
+
+  const [openModal, setOpenModal] = useState(false)
+
   return (
     <>
       <Head>
@@ -11,8 +15,8 @@ export default function Home() {
         <meta name='viewport' content='width=device-width, initial-scale=1' />
         <link rel='icon' href='/favicon.ico' />
       </Head>
-      <NavBar />
-      <Description />
+      <NavBar openModal={openModal} setOpenModal={setOpenModal}/>
+      <Description openModal={openModal} setOpenModal={setOpenModal}/>
     </>
   )
 }
