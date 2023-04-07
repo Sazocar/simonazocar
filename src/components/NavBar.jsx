@@ -65,7 +65,7 @@ const NavBar = () => {
                         className={classNames(
                           item.current
                             ? 'bg-gray-900 text-white'
-                            : 'text-gray-300 hover:bg-gray-700 hover:text-green',
+                            : 'text-gray-300 hover:text-green',
                           'code flex sm:justify-center rounded-md px-3 py-2 text-sm font-medium'
                         )}
                         aria-current={item.current ? 'page' : undefined}
@@ -93,7 +93,7 @@ const NavBar = () => {
                   className={classNames(
                     item.current
                       ? 'bg-gray-900 text-white'
-                      : 'sm:flex sm:items-center sm:justify-center text-gray-300 hover:bg-gray-700 hover:text-green',
+                      : 'sm:flex sm:items-center sm:justify-center text-gray-300 hover:text-green',
                     'sm:flex sm:flex-column sm:justify-center code block rounded-md px-3 py-2 text-base font-medium'
                   )}
                   aria-current={item.current ? 'page' : undefined}
