@@ -16,17 +16,17 @@ const technologies2 = [
 
 const About = () => {
   return (
-    <section className='mx-auto w-4/6'>
-      <header className='mb-8 w-full flex flex-row items-center gap-x-2'>
+    <section className='flex flex-col container center mx-auto justify-center bg-navy'>
+      <header className='mb-8 w-full flex flex-row items-center justify-center'>
         <h2 className='text-2xl px-3 font-semibold text-lightest-slate md:text-3xl'>
           <span className='code font-thin text-xl text-green'>01.</span> About
           Me
         </h2>
         <hr className='h-px w-36 sm:w-80 bg-gray-200 border-0 dark:bg-gray-700' />
       </header>
-      <div className='lg:grid lg:grid-cols-2 lg:w-auto mx-auto flex flex-col justify-center items-center gap-y-10'>
-        <section className='text-slate w-3/4'>
-          <p className='my-4 text-lg'>
+      <div className='mx-auto flex lg:flex-row lg:gap-x-20 flex-col justify-center items-center gap-y-10'>
+        <section className='text-slate px-6'>
+          <p className='my-4 text-lg w-full'>
             I am a software engineering student at Universidad Católica Andrés
             Bello. My passion for coding and interest in frontend development
             led me to become a Junior Frontend Developer, where I have been able
@@ -93,7 +93,7 @@ const About = () => {
           </div>
         </section>
         <Image
-          className='min-w-max rounded-md'
+          className='sm:min-w-max rounded-md w-86 '
           width={290}
           height={290}
           priority
