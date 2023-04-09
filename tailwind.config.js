@@ -14,7 +14,7 @@ module.exports = {
         'white': '#e6f1ff',
         'lightest-slate': '#ccd6f6',
         'light-slate': '#a8b2d1',
-        'slate': '#8892b0',
+        'slate': '#8892B0',
         'navy': '#0a192f',
         'lightest-navy': '#233554',
         'dark-navy': '#112240',

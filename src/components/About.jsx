@@ -17,15 +17,15 @@ const technologies2 = [
 const About = () => {
   return (
     <section className='mx-auto w-4/6'>
-      <header className='mb-8 w-screen flex flex-row items-center gap-x-2'>
+      <header className='mb-8 w-full flex flex-row items-center gap-x-2'>
         <h2 className='text-2xl px-3 font-semibold text-lightest-slate md:text-3xl'>
           <span className='code font-thin text-xl text-green'>01.</span> About
           Me
         </h2>
-        <hr className='h-px w-80 bg-gray-200 border-0 dark:bg-gray-700' />
+        <hr className='h-px w-36 sm:w-80 bg-gray-200 border-0 dark:bg-gray-700' />
       </header>
-      <div className='grid grid-cols-2'>
-        <section className='text-slate'>
+      <div className='lg:grid lg:grid-cols-2 lg:w-auto mx-auto flex flex-col justify-center items-center gap-y-10'>
+        <section className='text-slate w-3/4'>
           <p className='my-4 text-lg'>
             I am a software engineering student at Universidad Católica Andrés
             Bello. My passion for coding and interest in frontend development
@@ -97,7 +97,7 @@ const About = () => {
           width={290}
           height={290}
           priority
-          src='/porfolio-image.jpg'
+          src='/portfolio-image.jpg'
           alt='Simón A. Azócar'
         />
       </div>
