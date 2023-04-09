@@ -29,6 +29,3 @@ const Description = ({ openModal }) => {
 }
 
 export default Description
-
-
-

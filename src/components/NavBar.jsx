@@ -122,5 +122,3 @@ const NavBar = ({ openModal, setOpenModal }) => {
 }
 
 export default NavBar
-
-

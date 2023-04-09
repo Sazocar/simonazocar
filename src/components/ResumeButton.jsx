@@ -25,6 +25,3 @@ const ResumeButton = () => {
 }
 
 export default ResumeButton
-
-
-

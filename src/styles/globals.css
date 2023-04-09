@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-
 .code {
-  font-family: 'Space Mono', monospace;
+  font-family: 'Fira Code', monospace;
 }
+
