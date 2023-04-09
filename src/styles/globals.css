@@ -3,6 +3,22 @@
 @tailwind utilities;
 
 .code {
-  font-family: 'Fira Code', monospace;
+  font-family: "Fira Code", monospace;
 }
 
+/* Scrollbar Styles */
+html {
+  scrollbar-width: thin;
+  scrollbar-color: #4d5364 #0a192f;
+}
+::-webkit-scrollbar {
+  width: 12px;
+}
+::-webkit-scrollbar-track {
+  background: #0a192f;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #4d5364;
+  border: 3px solid #0a192f;
+  border-radius: 10px;
+}
