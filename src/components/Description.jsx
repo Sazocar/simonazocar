@@ -17,8 +17,10 @@ const Description = ({ openModal }) => {
         I build things for the web.
       </h2>
       <p className='mt-8 text-slate w-full md:w-3/5'>
-        {`I'm a Junior Frontend Developer. I like to create clean and good looking user interfaces and I am currently focused on finishing my degree as Software Engineer at Universidad Católica Andrés Bello`}
-        .
+        I&apos;m a <span className='text-green'>Junior Frontend Developer</span> who
+        likes to create clean and good looking user interfaces. I&apos;m currently
+        focused on finishing my degree as <span className='text-green'>Software Engineer </span>
+        at Universidad Católica Andrés Bello .
       </p>
 
       <section className='mt-12'>

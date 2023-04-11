@@ -26,10 +26,10 @@ const About = () => {
       </header>
       <div className='mx-auto flex lg:flex-row lg:gap-x-20 flex-col justify-center items-center gap-y-10'>
         <section className='text-slate px-6'>
-          <p className='my-4 text-lg w-full'>
+          <p className='my-4 text-base w-full md:text-lg'>
             I am a software engineering student at <span className='text-green'>Universidad Católica Andrés
             Bello.</span> My passion for coding and interest in <span className='text-green'>frontend development </span>
-            led me to become a <span className='text-green'>Junior Frontend Developer </span>, where I have been able
+            led me to become a <span className='text-green'>Junior Frontend Developer</span>, where I have been able
             to design and create visually appealing and user-friendly user
             interfaces for various projects.
           </p>
