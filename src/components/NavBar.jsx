@@ -92,8 +92,8 @@ const NavBar = ({ openModal, setOpenModal }) => {
           <Disclosure.Panel
             className={
               openModal
-                ? 'z-30 h-1/6 absolute bg-navy w-full sm:hidden text-center bg-navy'
-                : 'z-30 h-1/6 absolute bg-navy w-full sm:hidden text-center bg-dark-navy'
+                ? 'z-30 h-full absolute top-24 bg-navy w-full sm:hidden text-center bg-navy'
+                : 'z-30 h-auto absolute top-24 bg-navy w-full sm:hidden text-center bg-navy'
             }
           >
             <div className='2xl:code sm:flex sm:items-center sm:justify-center space-y-1 px-2 pb-3 pt-2'>
