@@ -2,8 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
 .code {
-  font-family: "Fira Code", monospace;
+  font-family: 'Fira Code', monospace;
 }
 
 /* Scrollbar Styles */
@@ -22,3 +28,4 @@ html {
   border: 3px solid #0a192f;
   border-radius: 10px;
 }
+

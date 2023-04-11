@@ -9,7 +9,7 @@ const Description = ({ openModal }) => {
           : 'h-screen flex flex-col justify-center bg-navy container mx-auto px-8 lg:px-36'
       }
     >
-      <h3 className='code text-green text-base sm:text-xl'>Hi, my name is</h3>
+      <h3 className='code text-green text-base sm:text-xl'>Hello, my name is</h3>
       <h1 className='mt-7 text-4xl font-semibold text-lightest-slate md:text-7xl'>
         Simón A. Azócar.
       </h1>

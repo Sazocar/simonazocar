@@ -22,11 +22,11 @@ const About = () => {
           <span className='code font-thin text-xl text-green'>01.</span> About
           Me
         </h2>
-        <hr className='h-px w-52 sm:w-6/12 bg-gray-200 border-0 dark:bg-gray-700' />
+        <hr className='h-px w-48 sm:w-6/12 bg-gray-200 border-0 dark:bg-gray-700' />
       </header>
       <div className='mx-auto flex lg:flex-row lg:gap-x-20 flex-col justify-center items-center gap-y-10'>
-        <section className='text-slate px-6'>
-          <p className='my-4 text-base w-full md:text-lg'>
+        <section className='text-slate text-base md:text-lg px-6'>
+          <p className='my-4 w-full '>
             I am a software engineering student at <span className='text-green'>Universidad Católica Andrés
             Bello.</span> My passion for coding and interest in <span className='text-green'>frontend development </span>
             led me to become a <span className='text-green'>Junior Frontend Developer</span>, where I have been able
@@ -34,7 +34,7 @@ const About = () => {
             interfaces for various projects.
           </p>
 
-          <p className='my-4 text-lg'>
+          <p className='my-4'>
             I love to create UI that not only looks good but also provides a
             great user experience. In this personal portfolio I&apos;m
             showcasing my <span className='text-green'>creativity and proficiency </span> in frontend development
@@ -42,7 +42,7 @@ const About = () => {
             technologies.
           </p>
 
-          <p className='my-4 text-lg'>
+          <p className='my-4'>
             I am always on the lookout for opportunities to <span className='text-green'>improve my skills </span>
             and knowledge in software engineering, and I hope to make a positive
             impact on the tech industry in the future.
