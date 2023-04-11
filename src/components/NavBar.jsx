@@ -23,7 +23,7 @@ const NavBar = ({ openModal, setOpenModal }) => {
     <Disclosure as='nav' className='p-1 bg-navy'>
       {({ open }) => (
         <>
-          <div className='w-full mx-auto py-2 px-4 sm:px-6 lg:px-8 justify-between'>
+          <div className='w-full absolute mx-auto py-2 px-4 sm:px-6 lg:px-8 justify-between'>
             <div className='relative flex h-16 items-center justify-between'>
               <div className='absolute inset-y-0 right-0 flex items-center sm:hidden'>
                 {/* Mobile menu button*/}
