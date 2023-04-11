@@ -17,7 +17,7 @@ export default function Home() {
         <link rel='icon' href='/favicon.ico' />
       </Head>
       <NavBar openModal={openModal} setOpenModal={setOpenModal}/>
-      <Description openModal={openModal} setOpenModal={setOpenModal}/>
+      <Description />
       <About />
     </>
   )

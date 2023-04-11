@@ -1,13 +1,9 @@
 import ResumeButton from './ResumeButton'
 
-const Description = ({ openModal }) => {
+const Description = () => {
   return (
     <div
-      className={
-        openModal
-          ? 'h-screen flex flex-col justify-center bg-navy container mx-auto px-8 lg:px-36'
-          : 'h-screen flex flex-col justify-center bg-navy container mx-auto px-8 lg:px-36'
-      }
+      className='h-screen flex flex-col justify-center bg-navy container mx-auto px-8 lg:px-36'
     >
       <h3 className='code text-green text-base sm:text-xl'>Hello, my name is</h3>
       <h1 className='mt-7 text-4xl font-semibold text-lightest-slate md:text-7xl'>
