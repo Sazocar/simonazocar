@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import Link from 'next/link'
 
 const technologies1 = [
   { name: 'Javascript (ES6+)' },
@@ -29,7 +30,15 @@ const About = () => {
           <p className='my-4 w-full '>
             I am a software engineering student at{' '}
             <span className='text-green'>
-              Universidad Católica Andrés Bello.
+              <Link
+                href='https://www.ucab.edu.ve/'
+                className='hover:underline text-green decoration-solid'
+                target='__blank'
+              >
+                {' '}
+                Universidad Católica Andrés Bello
+              </Link>
+              .
             </span>{' '}
             My passion for coding and interest in{' '}
             <span className='text-green'>frontend development </span>
@@ -108,7 +117,7 @@ const About = () => {
             src='/portfolio-image.jpg'
             alt='Simón A. Azócar'
           />
-          <div className='absolute top-5 left-5 w-80 h-full -z-10 sm:top-10 sm:left-10 sm:w-96 sm:h-full border-green border border-4 rounded-md '></div>
+          <div className='absolute top-5 left-5 w-80 h-full -z-10 sm:top-5 sm:left-5 sm:w-96 sm:h-full border-green border border-4 rounded-md '></div>
         </div>
       </div>
     </section>
@@ -116,4 +125,5 @@ const About = () => {
 }
 
 export default About
+
 
