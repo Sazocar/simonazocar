@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import Link from 'next/link'
+import Heading from './Heading'
 
 const technologies1 = [
   { name: 'Javascript (ES6+)' },
@@ -17,14 +18,8 @@ const technologies2 = [
 
 const About = () => {
   return (
-    <section className='flex flex-col sm:px-24 container center mx-auto mb-24 justify-center bg-navy'>
-      <header className='mb-8 w-full flex flex-row items-center sm:justify-start justify-center'>
-        <h2 className='text-2xl px-3 font-semibold text-lightest-slate md:text-3xl'>
-          <span className='code font-thin text-xl text-green'>01.</span> About
-          Me
-        </h2>
-        <hr className='h-px w-48 sm:w-6/12 bg-gray-200 border-0 dark:bg-gray-700' />
-      </header>
+    <section className='flex 2xl:h-screen flex-col sm:px-24 container center mx-auto justify-center bg-navy'>
+      <Heading number='01' text='About Me' />
       <div className='mx-auto z-10 flex lg:flex-row lg:gap-x-20 flex-col justify-center items-center gap-y-10'>
         <section className='text-slate text-base md:w-4/5 md:text-lg px-6'>
           <p className='my-4 w-full '>
@@ -125,5 +120,6 @@ const About = () => {
 }
 
 export default About
+
 
 

@@ -3,6 +3,7 @@ import Description from '@/components/Description'
 import NavBar from '@/components/NavBar'
 import Head from 'next/head'
 import About from '@/components/About'
+import Feature from '@/components/Feature'
 
 export default function Home() {
 
@@ -19,6 +20,7 @@ export default function Home() {
       <NavBar openModal={openModal} setOpenModal={setOpenModal}/>
       <Description />
       <About />
+      <Feature />
     </>
   )
 }
