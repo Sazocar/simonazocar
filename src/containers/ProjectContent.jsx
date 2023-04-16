@@ -14,8 +14,8 @@ const ProjectContent = ({ index }) => {
       <div
         className={
           index % 2 === 0
-            ? 'mt-4 w-full text-end z-40 text-slate rounded bg-dark-blue p-6 drop-shadow-2xl'
-            : 'mt-4 w-full text-start z-40 text-slate rounded bg-dark-blue p-6 drop-shadow-2xl'
+            ? 'mt-4 w-full text-end z-40 text-slate rounded bg-dark-blue p-6 hover:drop-shadow-2xl transition hover:ease-in duration-300 drop-shadow-sm'
+            : 'mt-4 w-full text-start z-40 text-slate rounded bg-dark-blue p-6 hover:drop-shadow-2xl transition hover:ease-in duration-300 drop-shadow-sm'
         }
       >
         <p>

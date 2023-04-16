@@ -16,7 +16,7 @@ const FeatureProject = ({ title, description, tags, index }) => {
         }
       >
         <Link
-          className='grayscale hover:grayscale-0 hover:cursor-pointer transition hover:ease-in-out duration-500'
+          className='grayscale hover:grayscale-0 hover:cursor-pointer transition hover:ease-in-out duration-300'
           href='https://avo-nextjs-eight.vercel.app/'
           target='__blank'
         >
@@ -24,7 +24,7 @@ const FeatureProject = ({ title, description, tags, index }) => {
             width={1200}
             height={1200}
             sizes='100vw'
-            className='rounded'
+            className='rounded hover:drop-shadow-2xl transition hover:ease-in duration-300 drop-shadow-sm'
             alt={title}
             src='/corsi-screenshot.png'
           />
@@ -36,6 +36,8 @@ const FeatureProject = ({ title, description, tags, index }) => {
 }
 
 export default FeatureProject
+
+
 
 
 
