@@ -2,10 +2,10 @@ import ProjectButtonContainer from './ProjectButtonContainer'
 
 const ProjectContent = () => {
   return (
-    <section className='flex flex-col justify-between items-end w-1/2'>
+    <section className='absolute top-10 right-0 flex flex-col justify-between items-end w-1/2'>
       <h3 className='code text-xs text-green'>Feature Project</h3>
       <h1 className='text-3xl mt-2 text-lightest-slate'>Avo Store</h1>
-      <div className='mt-4 w-5/6 text-end z-40 text-slate rounded bg-dark-blue p-6 drop-shadow-2xl	'>
+      <div className='mt-4 w-full text-end z-40 text-slate rounded bg-dark-blue p-6 drop-shadow-2xl	'>
         <p>
           A minimal, dark blue theme for VS Code, Sublime Text, Atom, iTerm, and
           more. Available on Visual Studio Marketplace, Package Control, Atom
@@ -18,7 +18,7 @@ const ProjectContent = () => {
         <li>Sublime</li>
         <li>Hyper</li>
       </ul>
-      <section className='mt-4'>
+      <section className='mt-6'>
         <ProjectButtonContainer
           repo='https://tailwindcss.com/docs/transition-timing-function'
           demo='https://tailwindcss.com/docs/transition-timing-function'

@@ -6,7 +6,7 @@ import ProjectContent from '@/containers/ProjectContent'
 
 const FeatureProject = ({ title, description, tags }) => {
   return (
-    <div className='relative w-full h-96 mt-4 flex flex-row justify-between'>
+    <div className='relative w-full mt-4'>
       <div className='container w-4/6 z-10 h-auto fill-current w-7/12 '>
         <Image
           width={1200}
