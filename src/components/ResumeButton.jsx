@@ -2,7 +2,7 @@ const ResumeButton = () => {
   return (
     <div className='flex justify-center sm:flex sm:justify-start'>
       <button
-        className={`font-sans hover:bg-hover-color py-2 px-4 flex flex-row justify-evenly center w-36 sm:flex sm:flex-row sm:justify-evenly sm:w-36 text-green text-base border-2 border-green rounded-md`}
+        className='font-sans hover:ease-in duration-300 hover:bg-hover-color py-2 px-4 flex flex-row justify-evenly center w-36 sm:flex sm:flex-row sm:justify-evenly sm:w-36 text-green text-base border-2 border-green rounded-md'
       >
         <svg
           xmlns='http://www.w3.org/2000/svg'
