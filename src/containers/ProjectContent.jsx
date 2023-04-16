@@ -7,8 +7,8 @@ const ProjectContent = ({ project, index }) => {
     <section
       className={
         index % 2 === 0
-          ? 'absolute top-10 left-0 flex flex-col justify-between items-start w-1/2'
-          : 'absolute top-10 right-0 flex flex-col justify-between items-end w-1/2'
+          ? 'absolute top-10 right-0 flex flex-col justify-between items-end w-1/2'
+          : 'absolute top-10 left-0 flex flex-col justify-between items-start w-1/2'
       }
     >
       <h3 className='code text-xs text-green'>Feature Project</h3>
@@ -16,8 +16,8 @@ const ProjectContent = ({ project, index }) => {
       <div
         className={
           index % 2 === 0
-            ? 'mt-4 w-full text-start z-40 text-slate rounded bg-dark-blue p-6 hover:drop-shadow-2xl transition hover:ease-in duration-300 drop-shadow-sm'
-            : 'mt-4 w-full text-end z-40 text-slate rounded bg-dark-blue p-6 hover:drop-shadow-2xl transition hover:ease-in duration-300 drop-shadow-sm'
+            ? 'mt-4 w-full text-end z-40 text-slate rounded bg-dark-blue p-6 hover:drop-shadow-2xl transition hover:ease-in duration-300 drop-shadow-sm'
+            : 'mt-4 w-full text-start z-40 text-slate rounded bg-dark-blue p-6 hover:drop-shadow-2xl transition hover:ease-in duration-300 drop-shadow-sm'
         }
       >
         <p>{description}</p>

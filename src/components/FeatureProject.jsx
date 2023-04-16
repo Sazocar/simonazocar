@@ -2,8 +2,6 @@ import Image from 'next/image'
 import ProjectContent from '@/containers/ProjectContent'
 import Link from 'next/link'
 
-//  Create a data file with all projects as an object
-
 const FeatureProject = ({ project, index }) => {
   const { title, image, demo } = project
 
@@ -12,8 +10,8 @@ const FeatureProject = ({ project, index }) => {
       <div
         className={
           index % 2 === 0
-            ? 'absolute right-0 w-4/6 z-10 h-auto fill-current w-7/12 '
-            : 'absolute left-0 w-4/6 z-10 h-auto fill-current w-7/12 '
+            ? 'absolute left-0 w-4/6 z-10 h-auto fill-current w-7/12 '
+            : 'absolute right-0 w-4/6 z-10 h-auto fill-current w-7/12 '
         }
       >
         <Link
