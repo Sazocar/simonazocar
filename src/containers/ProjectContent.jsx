@@ -12,7 +12,7 @@ const ProjectContent = () => {
           Package Manager, and npm.
         </p>
       </div>
-      <ul className='code text-sm text-slate flex flex-row justify-evenly gap-x-5 mt-6'>
+      <ul className='code text-xs text-slate flex flex-row justify-evenly gap-x-5 mt-6'>
         <li>VS Code</li>
         <li>JS</li>
         <li>Sublime</li>
