@@ -1,5 +1,4 @@
 import Image from 'next/image'
-import ProjectButtonContainer from '../containers/ProjectButtonContainer'
 import ProjectContent from '@/containers/ProjectContent'
 import Link from 'next/link'
 
@@ -7,7 +6,7 @@ import Link from 'next/link'
 
 const FeatureProject = ({ title, description, tags, index }) => {
   return (
-    <div className='relative w-full h-64 mt-16 mb-56'>
+    <div className='relative box-border w-full h-64 mt-16 mb-72 px-8'>
       <div
         className={
           index % 2 === 0
@@ -30,15 +29,11 @@ const FeatureProject = ({ title, description, tags, index }) => {
           />
         </Link>
       </div>
-      <ProjectContent index={index} />
+      <ProjectContent index={index} description={description} />
     </div>
   )
 }
 
 export default FeatureProject
-
-
-
-
 
 
