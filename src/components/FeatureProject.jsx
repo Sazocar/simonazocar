@@ -7,7 +7,7 @@ import Link from 'next/link'
 
 const FeatureProject = ({ title, description, tags, index }) => {
   return (
-    <div className='relative h-screen w-full mt-4'>
+    <div className='relative w-full h-64 mt-16 mb-56'>
       <div
         className={
           index % 2 === 0
@@ -36,4 +36,7 @@ const FeatureProject = ({ title, description, tags, index }) => {
 }
 
 export default FeatureProject
+
+
+
 
