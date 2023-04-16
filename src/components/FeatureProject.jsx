@@ -4,7 +4,9 @@ import Link from 'next/link'
 
 //  Create a data file with all projects as an object
 
-const FeatureProject = ({ title, description, tags, index }) => {
+const FeatureProject = ({ project, index }) => {
+  const { title, image, demo } = project
+
   return (
     <div className='relative box-border w-full h-64 mt-16 mb-72 px-8'>
       <div
@@ -16,7 +18,7 @@ const FeatureProject = ({ title, description, tags, index }) => {
       >
         <Link
           className='grayscale hover:grayscale-0 hover:cursor-pointer transition hover:ease-in-out duration-300'
-          href='https://avo-nextjs-eight.vercel.app/'
+          href={demo}
           target='__blank'
         >
           <Image
@@ -25,15 +27,14 @@ const FeatureProject = ({ title, description, tags, index }) => {
             sizes='100vw'
             className='rounded hover:drop-shadow-2xl transition hover:ease-in duration-300 drop-shadow-sm'
             alt={title}
-            src='/corsi-screenshot.png'
+            src={image}
           />
         </Link>
       </div>
-      <ProjectContent index={index} description={description} />
+      <ProjectContent project={project} index={index} />
     </div>
   )
 }
 
 export default FeatureProject
-
 

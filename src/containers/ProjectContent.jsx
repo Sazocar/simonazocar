@@ -1,6 +1,8 @@
 import ProjectButtonContainer from './ProjectButtonContainer'
 
-const ProjectContent = ({ index, description }) => {
+const ProjectContent = ({ project, index }) => {
+  const { title, description, tags, repo, demo } = project
+
   return (
     <section
       className={
@@ -10,7 +12,7 @@ const ProjectContent = ({ index, description }) => {
       }
     >
       <h3 className='code text-xs text-green'>Feature Project</h3>
-      <h1 className='text-3xl mt-2 text-lightest-slate'>Avo Store</h1>
+      <h1 className='text-3xl mt-2 text-lightest-slate'>{title}</h1>
       <div
         className={
           index % 2 === 0
@@ -18,21 +20,15 @@ const ProjectContent = ({ index, description }) => {
             : 'mt-4 w-full text-end z-40 text-slate rounded bg-dark-blue p-6 hover:drop-shadow-2xl transition hover:ease-in duration-300 drop-shadow-sm'
         }
       >
-        <p>
-          {description}
-        </p>
+        <p>{description}</p>
       </div>
       <ul className='code text-xs text-slate flex flex-row justify-evenly gap-x-5 mt-6'>
-        <li>VS Code</li>
-        <li>JS</li>
-        <li>Sublime</li>
-        <li>Hyper</li>
+        {tags.map((tag) => (
+          <li key={tag}>{tag}</li>
+        ))}
       </ul>
       <section className='mt-6'>
-        <ProjectButtonContainer
-          repo='https://tailwindcss.com/docs/transition-timing-function'
-          demo='https://tailwindcss.com/docs/transition-timing-function'
-        />
+        <ProjectButtonContainer repo={repo} demo={demo} />
       </section>
     </section>
   )
