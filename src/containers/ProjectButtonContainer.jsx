@@ -1,5 +1,5 @@
-import GithubIcon from './GithubIcon'
-import DemoIcon from './DemoIcon'
+import GithubIcon from '../components/GithubIcon'
+import DemoIcon from '../components/DemoIcon'
 
 const ProjectButtonContainer = ({ repo, demo }) => {
   return (
