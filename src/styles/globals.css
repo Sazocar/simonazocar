@@ -8,6 +8,12 @@ body {
   overflow-x: hidden;
 }
 
+body {
+  width: 100%;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
 .code {
   font-family: 'Fira Code', monospace;
 }
