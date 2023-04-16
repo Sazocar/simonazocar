@@ -18,13 +18,12 @@ const Description = () => {
         who likes to create clean and good looking user interfaces. I&apos;m
         currently focused on finishing my degree as{' '}
         <span className='text-green'>Software Engineer </span>
-        at
+        at{' '}
         <Link
           href='https://www.ucab.edu.ve/'
-          className='hover:underline text-green decoration-solid'
+          className=' hover:underline text-green decoration-solid'
           target='__blank'
         >
-          {' '}
           Universidad Católica Andrés Bello
         </Link>
         .

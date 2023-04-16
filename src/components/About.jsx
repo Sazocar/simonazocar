@@ -105,14 +105,14 @@ const About = () => {
         </section>
         <div className='relative [&>div]:hover:-translate-x-2 [&>div]:hover:-translate-y-2 [&>div]:ease-in-out [&>div]:duration-300 '>
           <Image
-            className='sm:min-w-max drop-shadow-2xl z-10 rounded-md w-80 sm:grayscale sm:hover:grayscale-0 sm:ease-in-out duration-300'
+            className='sm:min-w-max drop-shadow-2xl z-10 rounded w-80 sm:grayscale sm:hover:grayscale-0 sm:ease-in-out duration-300'
             width={290}
             height={290}
             priority
             src='/portfolio-image.jpg'
             alt='Simón A. Azócar'
           />
-          <div className='absolute top-5 left-5 w-80 h-full -z-10 sm:top-5 sm:left-5 sm:w-96 sm:h-full border-green border border-4 rounded-md '></div>
+          <div className='absolute top-5 left-5 w-80 h-full -z-10 sm:top-5 sm:left-5 sm:w-96 sm:h-full border-green border border-4 rounded '></div>
         </div>
       </div>
     </section>

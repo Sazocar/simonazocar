@@ -19,7 +19,8 @@ module.exports = {
         'lightest-navy': '#233554',
         'dark-navy': '#112240',
         'green': '#79F7DA',
-        'hover-color': '#133040'
+        'hover-color': '#133040',
+        'dark-blue': '#112240',
       },
     },
   },
