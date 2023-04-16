@@ -1,11 +1,23 @@
 import ProjectButtonContainer from './ProjectButtonContainer'
 
-const ProjectContent = () => {
+const ProjectContent = ({ index }) => {
   return (
-    <section className='absolute top-10 right-0 flex flex-col justify-between items-end w-1/2'>
+    <section
+      className={
+        index % 2 === 0
+          ? 'absolute top-10 left-0 flex flex-col justify-between items-start w-1/2'
+          : 'absolute top-10 right-0 flex flex-col justify-between items-end w-1/2'
+      }
+    >
       <h3 className='code text-xs text-green'>Feature Project</h3>
       <h1 className='text-3xl mt-2 text-lightest-slate'>Avo Store</h1>
-      <div className='mt-4 w-full text-end z-40 text-slate rounded bg-dark-blue p-6 drop-shadow-2xl	'>
+      <div
+        className={
+          index % 2 === 0
+            ? 'mt-4 w-full text-end z-40 text-slate rounded bg-dark-blue p-6 drop-shadow-2xl'
+            : 'mt-4 w-full text-start z-40 text-slate rounded bg-dark-blue p-6 drop-shadow-2xl'
+        }
+      >
         <p>
           A minimal, dark blue theme for VS Code, Sublime Text, Atom, iTerm, and
           more. Available on Visual Studio Marketplace, Package Control, Atom
