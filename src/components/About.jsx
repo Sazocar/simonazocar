@@ -18,10 +18,10 @@ const technologies2 = [
 
 const About = () => {
   return (
-    <section className='flex 2xl:h-screen flex-col sm:px-24 container center mx-auto justify-center bg-navy'>
+    <section className='flex lg:h-screen flex-col sm:px-24 container center mx-auto justify-center bg-navy'>
       <Heading number='01' text='About Me' />
-      <div className='mx-auto z-10 flex lg:flex-row lg:gap-x-20 flex-col justify-center items-center gap-y-10'>
-        <section className='text-slate text-base md:w-4/5 md:text-lg px-6'>
+      <div className='mx-auto z-10 flex lg:flex-row lg:gap-x-20 flex-col justify-between items-center gap-y-10'>
+        <section className='text-slate text-base w-full lg:w-7/12 md:text-lg px-6'>
           <p className='my-4 w-full '>
             I am a software engineering student at{' '}
             <span className='text-green'>
