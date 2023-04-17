@@ -39,7 +39,7 @@ const About = () => {
             <span className='text-green'>frontend development </span>
             led me to become a{' '}
             <span className='text-green'>Junior Frontend Developer</span>, where
-            I have been able to design and create visually appealing and
+            I&apos;ve been able to design and create visually appealing and
             user-friendly user interfaces for various projects.
           </p>
 
@@ -103,7 +103,7 @@ const About = () => {
             </ul>
           </div>
         </section>
-        <div className='relative [&>div]:hover:-translate-x-2 [&>div]:hover:-translate-y-2 [&>div]:ease-in-out [&>div]:duration-300 '>
+        <div className='group relative [&>div]:hover:-translate-x-2 [&>div]:hover:-translate-y-2 [&>div]:ease-in-out [&>div]:duration-300 '>
           <Image
             className='sm:min-w-max drop-shadow-2xl z-10 rounded w-80 sm:grayscale sm:hover:grayscale-0 sm:ease-in-out duration-300'
             width={290}
@@ -112,6 +112,9 @@ const About = () => {
             src='/portfolio-image.jpg'
             alt='Simón A. Azócar'
           />
+          <span className='absolute -top-12 end-0 scale-0 transition-all rounded bg-dark-blue p-2 text-slate group-hover:scale-100'>
+            ✨ Yep, this is me!
+          </span>
           <div className='absolute top-5 left-5 w-80 h-full -z-10 sm:top-5 sm:left-5 sm:w-96 sm:h-full border-green border border-4 rounded '></div>
         </div>
       </div>
@@ -120,4 +123,6 @@ const About = () => {
 }
 
 export default About
+
+
 
