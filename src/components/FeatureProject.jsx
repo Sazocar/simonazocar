@@ -6,7 +6,7 @@ const FeatureProject = ({ project, index }) => {
   const { title, image, demo } = project
 
   return (
-    <div className='relative box-border w-full h-64 mt-16 mb-72 px-8'>
+    <div className='relative flex flex-row items-center w-full h-64 mt-32 mb-72 px-8'>
       <div
         className={
           index % 2 === 0

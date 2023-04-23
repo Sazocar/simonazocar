@@ -7,8 +7,8 @@ const ProjectContent = ({ project, index }) => {
     <section
       className={
         index % 2 === 0
-          ? 'absolute top-10 right-0 flex flex-col justify-between items-end w-1/2'
-          : 'absolute top-10 left-0 flex flex-col justify-between items-start w-1/2'
+          ? 'absolute right-0 flex flex-col justify-between items-end w-1/2'
+          : 'absolute left-0 flex flex-col justify-between items-start w-1/2'
       }
     >
       <h3 className='code text-xs text-green'>Feature Project</h3>
