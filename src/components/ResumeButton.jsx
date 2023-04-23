@@ -1,9 +1,7 @@
 const ResumeButton = () => {
   return (
     <div className='flex justify-center sm:flex sm:justify-start'>
-      <button
-        className='font-sans hover:ease-in duration-300 hover:bg-hover-color py-2 px-4 flex flex-row justify-evenly center w-36 sm:flex sm:flex-row sm:justify-evenly sm:w-36 text-green text-base border-2 border-green rounded-md'
-      >
+      <button className='font-sans hover:ease-in duration-300 hover:bg-hover-color py-2 px-4 flex flex-row justify-evenly center w-36 sm:flex sm:flex-row sm:justify-evenly sm:w-36 text-green text-base border-2 border-green rounded-md'>
         <svg
           xmlns='http://www.w3.org/2000/svg'
           fill='none'
@@ -18,10 +16,17 @@ const ResumeButton = () => {
             d='M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5M16.5 12L12 16.5m0 0L7.5 12m4.5 4.5V3'
           />
         </svg>
-        Resume
+        <a
+          download
+          href='/files/resume.pdf'
+          target='_blank'
+        >
+          Resume
+        </a>
       </button>
     </div>
   )
 }
 
 export default ResumeButton
+
