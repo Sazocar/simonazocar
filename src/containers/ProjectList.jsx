@@ -1,15 +1,35 @@
 import ProjectCard from '@/ProjectCard'
 import othersProjectsData from '@/data/othersProjectsData'
+import { useState } from 'react'
 
 const ProjectList = () => {
+  const [numToShow, setNumToShow] = useState(6)
+  const visibleItems = othersProjectsData.slice(0, numToShow)
+
+  const handleShowMore = () => {
+    setNumToShow(othersProjectsData.length)
+  }
+
+  const handleShowLess = () => {
+    setNumToShow(6)
+  }
+
   return (
-    <div className='container w-3/4 mx-auto gap-4 grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 place-items-center'>
-      {othersProjectsData.map((project) => (
-        <ProjectCard key={project.title} project={project} />
-      ))}
-    </div>
+    <>
+      <div className='container w-3/4 mx-auto gap-4 grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 place-items-center'>
+        {visibleItems.map((project) => (
+          <ProjectCard key={project.title} project={project} />
+        ))}
+      </div>
+      {numToShow < othersProjectsData.length ? (
+        <button onClick={handleShowMore}>Show More</button>
+      ) : (
+        <button onClick={handleShowLess}>Show Less</button>
+      )}
+    </>
   )
 }
 
 export default ProjectList
+
 
