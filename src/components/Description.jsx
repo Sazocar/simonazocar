@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import ResumeButton from './ResumeButton'
+import Button from './Button'
 
 const Description = () => {
   return (
@@ -30,7 +30,7 @@ const Description = () => {
       </p>
 
       <section className='mt-12'>
-        <ResumeButton />
+        <Button text='Resume' />
       </section>
     </div>
   )

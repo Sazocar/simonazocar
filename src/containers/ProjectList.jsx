@@ -1,4 +1,5 @@
 import ProjectCard from '@/ProjectCard'
+import Button from '@/components/Button'
 import othersProjectsData from '@/data/othersProjectsData'
 import { useState } from 'react'
 
@@ -21,11 +22,14 @@ const ProjectList = () => {
           <ProjectCard key={project.title} project={project} />
         ))}
       </div>
-      {numToShow < othersProjectsData.length ? (
-        <button onClick={handleShowMore}>Show More</button>
-      ) : (
-        <button onClick={handleShowLess}>Show Less</button>
-      )}
+
+      <div className='grid place-items-center my-12'>
+        {numToShow < othersProjectsData.length ? (
+          <Button text='Show More' onClick={handleShowMore} />
+        ) : (
+          <Button text='Show Less' onClick={handleShowLess} />
+        )}
+      </div>
     </>
   )
 }
