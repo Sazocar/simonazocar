@@ -5,7 +5,7 @@ const Button = ({ text, onClick }) => {
     <div className='flex justify-center sm:flex sm:justify-start'>
       <button
         onClick={onClick}
-        className='font-sans hover:ease-in duration-300 hover:bg-hover-color py-2 px-4 flex flex-row justify-evenly center w-36 sm:flex sm:flex-row sm:justify-evenly sm:w-36 text-green text-base border-2 border-green rounded-md'
+        className='code font-light hover:ease-in duration-300 hover:bg-hover-color h-12 py-2 px-4 flex flex-row items-center justify-evenly center w-36 sm:flex sm:flex-row sm:justify-evenly sm:w-36 text-green text-sm border-2 border-green rounded-md'
       >
         {text === 'Resume' ? <DownloadIcon /> : null}
         {text === 'Resume' ? (
