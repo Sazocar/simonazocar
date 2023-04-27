@@ -4,6 +4,7 @@ import NavBar from '@/components/NavBar'
 import Head from 'next/head'
 import About from '@/components/About'
 import FeatureSection from '@/components/FeatureSection'
+import ProjectList from '@/containers/ProjectList'
 
 export default function Home() {
 
@@ -21,6 +22,8 @@ export default function Home() {
       <Description />
       <About />
       <FeatureSection />
+      <h2 className='text-center text-lightest-slate font-semibold text-3xl mb-20'>Other Noteworthy Projects</h2>
+      <ProjectList />
     </>
   )
 }

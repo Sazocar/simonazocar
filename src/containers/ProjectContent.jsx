@@ -22,7 +22,7 @@ const ProjectContent = ({ project, index }) => {
       >
         <p>{description}</p>
       </div>
-      <ul className='code text-xs text-slate flex flex-row justify-evenly gap-x-5 mt-6'>
+      <ul className='code text-xs text-slate flex flex-wrawp	flex-row gap-x-5 mt-6'>
         {tags.map((tag) => (
           <li key={tag}>{tag}</li>
         ))}
@@ -35,4 +35,5 @@ const ProjectContent = ({ project, index }) => {
 }
 
 export default ProjectContent
+
 

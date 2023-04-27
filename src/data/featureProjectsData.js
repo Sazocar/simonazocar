@@ -19,7 +19,7 @@ const featureProjectsData = [
     title: 'Pokedux',
     description: 'This is a dynamic React application that seamlessly integrates with the PokeAPI to render the first 151 Pokemons. The application has multiple functionalities, incorporating sophisticated features such as localStorage and Redux state management. These features ensure that data integrity is maintained and overall usability is enhanced.',
     image: '/pokedux-screenshot.png',
-    tags: ['ReactJS', 'Redux', 'Ant Design', 'JavaScript', 'PokeApi'],
+    tags: ['ReactJS', 'Redux', 'React Hot Toast', 'Ant Design', 'JavaScript'],
     demo: 'https://pokedux-virid.vercel.app/',
     repo: 'https://github.com/Sazocar/pokedux'
   },
