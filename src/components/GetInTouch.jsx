@@ -8,15 +8,17 @@ const GetInTouch = () => {
         <span>03. </span>
         <h4>What&apos;s Next?</h4>
       </div>
-      <h1 className='my-5 text-3xl md:text-6xl font-semibold text-lightest-slate'>Get In Touch</h1>
-      <p className='w-full md:w-4/5 mx-auto text-slate mb-8'>
+      <h1 className='my-5 text-3xl md:text-6xl font-semibold text-lightest-slate'>
+        Get In Touch
+      </h1>
+      <p className='w-full md:w-4/5 mx-auto text-base sm:text-lg text-slate mb-8'>
         As a frontend developer, I am actively seeking new opportunities to
         apply my skills and knowledge in the tech industry. If you have any
         available positions or project opportunities, please do not hesitate to
         contact me any time.
       </p>
 
-      <div className='grid place-items-center my-12'>
+      <div className='grid place-items-center my-6'>
         <Link href='mailto:saimn.azocar@gmail.com' target='_blank'>
           <Button text='Say Hello' />
         </Link>
@@ -26,7 +28,4 @@ const GetInTouch = () => {
 }
 
 export default GetInTouch
-
-
-
 

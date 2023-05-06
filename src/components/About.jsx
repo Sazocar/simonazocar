@@ -62,10 +62,10 @@ const About = () => {
           <p>
             Here are a few technologies I&apos;ve been working with recently:
           </p>
-          <div className='mt-8 flex justify-center md:justify-start flex-row gap-x-12'>
+          <div className='mt-8 flex justify-center md:justify-start code text-sm flex-row gap-x-12'>
             <ul>
               {technologies1.map((item) => (
-                <li key={item.name} className='flex flex-row items-center'>
+                <li key={item.name} className='flex flex-row my-2 items-center'>
                   <svg
                     xmlns='http://www.w3.org/2000/svg'
                     viewBox='0 0 20 20'
@@ -84,9 +84,11 @@ const About = () => {
             </ul>
             <ul>
               {technologies2.map((item) => (
-                <li key={item.name} className='flex flex-row items-center'>
+                <li
+                  key={item.name}
+                  className='flex flex-row my-2 items-center'
+                >
                   <svg
-                    xmlns='http://www.w3.org/2000/svg'
                     viewBox='0 0 20 20'
                     fill='currentColor'
                     className='w-5 h-5 text-green'
@@ -123,6 +125,7 @@ const About = () => {
 }
 
 export default About
+
 
 
 

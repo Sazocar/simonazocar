@@ -6,6 +6,7 @@ import About from '@/components/About'
 import FeatureSection from '@/components/FeatureSection'
 import ProjectList from '@/containers/ProjectList'
 import GetInTouch from '@/components/GetInTouch'
+import Footer from '@/components/Footer'
 
 export default function Home() {
 
@@ -23,9 +24,10 @@ export default function Home() {
       <Description />
       <About />
       <FeatureSection />
-      <h2 className='text-center text-lightest-slate font-semibold text-3xl mb-20'>Other Noteworthy Projects</h2>
+      <h2 className='text-center text-lightest-slate text-xl font-semibold sm:text-3xl mb-20'>Other Noteworthy Projects</h2>
       <ProjectList />
       <GetInTouch />
+      <Footer />
     </>
   )
 }

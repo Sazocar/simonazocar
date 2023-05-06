@@ -7,8 +7,12 @@ const ProjectCard = ({ project }) => {
   const { title, description, tags, demo, repo } = project
 
   return (
-    <Link className='h-full w-full' href={demo} target='_blank'>
-      <div className='p-8 hover:cursor-pointer [&>div>h2]:hover:text-green flex flex-col justify-between max-w-sm w-full h-full bg-dark-blue rounded hover:drop-shadow-2xl hover:-translate-y-2 ease-in-out duration-300 '>
+    <Link
+      className='h-full w-full'
+      href={repo}
+      target='_blank'
+    >
+      <div className='p-8 hover:cursor-pointer [&>div>h2]:hover:text-green flex flex-col justify-between w-full h-full bg-dark-blue rounded hover:drop-shadow-2xl hover:-translate-y-2 ease-in-out duration-300 '>
         <div>
           <div className='flex flex-row justify-between mb-7'>
             <FolderIcon />

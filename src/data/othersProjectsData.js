@@ -10,7 +10,6 @@ const othersProjectsData = [
     title: 'Corsi Api',
     description: 'This is the backend development project for the Corsi App that I made with my classmates. This was my first time using NestJS and TypeScript.',
     tags: ['NestJS', 'TypeScript', 'API Rest', 'Passport JWT'],
-    demo: 'https://corsi-soa2.onrender.com/docs',
     repo: 'https://github.com/Sazocar/corsi-api'
   },
   {
@@ -31,14 +30,14 @@ const othersProjectsData = [
     title: 'Github User Search',
     description: 'A React App using Material UI to display users information from Github Api.',
     tags: ['ReactJS', 'Material UI', 'Vite', 'Icons Material'],
-    demo: 'candid-palmier-0370ca.netlify.app/',
+    demo: 'https://candid-palmier-0370ca.netlify.app/',
     repo: 'https://github.com/Sazocar/github-user-search'
   },
   {
     title: 'Lazy Loading React App',
     description: 'A React App using NextJS as framework. This was a project from a Platzi course to learn about ReactJS and TypeScript where we made use of Intersection Observer Api.',
     tags: ['ReactJS', 'NextJS', 'Tailwind CSS', 'TypeScript', 'Intersection Observer API'],
-    demo: 'lazy-loading-react-ts.vercel.app',
+    demo: 'https://lazy-loading-react-ts.vercel.app',
     repo: 'https://github.com/Sazocar/lazy-loading-react-ts'
   },
   {
