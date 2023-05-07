@@ -72,10 +72,13 @@ const NavBar = ({ openModal, setOpenModal }) => {
                           item.current
                             ? 'text-white'
                             : 'text-gray-300 hover:text-green',
-                          'code flex sm:justify-center rounded-md px-3 py-2 text-sm font-medium'
+                          'code flex sm:justify-center rounded-md px-3 items-center py-2 text-sm font-medium'
                         )}
                         aria-current={item.current ? 'page' : undefined}
                       >
+                        <span className='code text-xs text-green mx-3'>
+                          {index !== 4 ? `0${index + 1}.` : null}
+                        </span>
                         {index !== 4 ? item.name : null}
                       </a>
                     ))}
