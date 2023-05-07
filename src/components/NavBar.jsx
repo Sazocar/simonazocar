@@ -1,6 +1,6 @@
 import { Disclosure } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
-import Button from './Button'
+import ActionButton from './ActionButton'
 import Image from 'next/image'
 
 const navigation = [
@@ -8,7 +8,7 @@ const navigation = [
   { name: 'Experience', href: '#', current: false },
   { name: 'Work', href: '#', current: false },
   { name: 'Contact', href: '#', current: false },
-  { name: <Button text='Resume' /> },
+  { name: <ActionButton text='Resume' /> },
 ]
 
 function classNames(...classes) {
@@ -84,7 +84,7 @@ const NavBar = ({ openModal, setOpenModal }) => {
               </div>
 
               <div className='absolute  hidden sm:flex sm:justify-center inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0'>
-                <Button text='Resume' />
+                <ActionButton text='Resume' />
               </div>
             </div>
           </div>
