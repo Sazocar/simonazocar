@@ -1,4 +1,4 @@
-import ProjectCard from '@/ProjectCard'
+import ProjectCard from '@/components/ProjectCard'
 import ActionButton from '@/components/ActionButton'
 import othersProjectsData from '@/data/othersProjectsData'
 import { useState } from 'react'

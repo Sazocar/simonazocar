@@ -2,9 +2,9 @@ const formationData = [
   {
     id: 0,
     category: 'UCAB',
-    title: ['Software Engineer'],
+    title: ['Software Engineer Degree'],
     institution: 'Universidad Católica Andrés Bello',
-    date: ['2018', 'Present'],
+    date: ['September 2018', 'Present'],
     description: [
       'Programming languages like Java, JavaScript, Dart, C++, Python, and other popular programming languages.',
       'Software design and application development.',
@@ -29,7 +29,8 @@ const formationData = [
       'Fundamentos de Bases de Datos',
     ],
     institution: 'Platzi',
-    date: ['2021', 'Present'],
+    date: ['August 2021', 'Present'],
+    description: []
   },
   {
     id: 2,
@@ -67,3 +68,5 @@ const formationData = [
     ],
   },
 ]
+
+export default formationData

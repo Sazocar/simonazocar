@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import dynamic from 'next/dynamic'
-import FolderIcon from './components/FolderIcon'
-import ProjectButtonContainer from './containers/ProjectButtonContainer'
+import FolderIcon from './FolderIcon'
+import ProjectButtonContainer from '../containers/ProjectButtonContainer'
 
 const ProjectCard = ({ project }) => {
   const { title, description, tags, demo, repo } = project

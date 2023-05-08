@@ -18,7 +18,7 @@ const technologies2 = [
 
 const About = () => {
   return (
-    <section className='flex lg:h-screen flex-col sm:px-24 container center mx-auto justify-center bg-navy'>
+    <section className='flex flex-col sm:px-24 container center mx-auto justify-center bg-navy'>
       <Heading number='01' text='About Me' />
       <div className='mx-auto z-10 flex lg:flex-row lg:gap-x-20 flex-col justify-between items-center gap-y-10'>
         <section className='text-slate text-base w-full lg:w-7/12 md:text-lg px-6'>
@@ -62,7 +62,7 @@ const About = () => {
           <p>
             Here are a few technologies I&apos;ve been working with recently:
           </p>
-          <div className='mt-8 flex justify-center md:justify-start code text-sm flex-row gap-x-12'>
+          <div className='mt-8 flex justify-center md:justify-start code text-xs flex-row gap-x-12'>
             <ul>
               {technologies1.map((item) => (
                 <li key={item.name} className='flex flex-row my-2 items-center'>
