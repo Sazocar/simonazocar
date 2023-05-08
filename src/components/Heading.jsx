@@ -1,7 +1,11 @@
-const Heading = ({ number, text }) => {
+const Heading = ({ number, text, width }) => {
   return (
-    <header className='mt-24 mb-8 w-full flex flex-row items-center sm:justify-start justify-center'>
-      <h2 className='text-2xl px-3 w-auto font-semibold sm:w-auto text-lightest-slate md:text-3xl'>
+    <header
+      className={`mt-24 mb-8 flex flex-row items-center sm:justify-start justify-center ${
+        width ? `sm:${width} mx-auto` : ''
+      }`}
+    >
+      <h2 className='text-2xl px-3 whitespace-nowrap font-semibold sm:w-auto text-lightest-slate md:text-3xl'>
         <span className='code font-thin text-xl text-green'>{number}.</span>{' '}
         {text}
       </h2>
@@ -10,5 +14,5 @@ const Heading = ({ number, text }) => {
   )
 }
 
-
 export default Heading
+
