@@ -5,7 +5,7 @@ const GetInTouch = () => {
   return (
     <section className='grid place-content-center text-center h-screen my-auto px-12 sm:w-full md:w-3/5 mx-auto'>
       <div className='flex flex-row font-thin text-sm md:text-base code justify-center gap-x-4 text-green items-center'>
-        <span>03. </span>
+        <span>04. </span>
         <h4>What&apos;s Next?</h4>
       </div>
       <h1 className='my-5 text-3xl md:text-6xl font-semibold text-lightest-slate'>

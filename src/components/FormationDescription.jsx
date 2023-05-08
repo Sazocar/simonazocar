@@ -1,6 +1,6 @@
 const FormationDescription = ({ formationData, selectedJobIndex }) => {
   return (
-    <div className='mt-4 sm:mt-0 w-full px-8 text-slate'>
+    <div className='mt-5 md:mt-0 w-full px-8 text-slate'>
       {formationData[selectedJobIndex].title.map((title) => (
         <span
           key={title}
