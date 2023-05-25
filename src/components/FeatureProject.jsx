@@ -3,7 +3,7 @@ import ProjectContent from '@/containers/ProjectContent'
 import Link from 'next/link'
 
 const FeatureProject = ({ project, index }) => {
-  const { title, image, demo } = project
+  const { title, image, demo, repo } = project
 
   return (
     <div className='relative flex flex-row items-center w-full h-64 mt-32 mb-72 px-8'>
@@ -16,14 +16,14 @@ const FeatureProject = ({ project, index }) => {
       >
         <Link
           className='grayscale hover:grayscale-0 hover:cursor-pointer transition hover:ease-in-out duration-300'
-          href={demo}
+          href={demo === '' ? repo : demo}
           target='__blank'
         >
           <Image
             width={1200}
             height={1200}
             sizes='100vw'
-            className='rounded hover:drop-shadow-2xl transition hover:ease-in duration-300 drop-shadow-sm'
+            className='rounded hidden sm:block hover:drop-shadow-2xl transition hover:ease-in duration-300 drop-shadow-sm'
             alt={title}
             src={image}
           />
@@ -35,4 +35,5 @@ const FeatureProject = ({ project, index }) => {
 }
 
 export default FeatureProject
+
 

@@ -27,7 +27,7 @@ export default function Home() {
       {/* Formation Container */}
       <ExperienceSection />
       <FeatureSection />
-      <h2 className='text-center text-lightest-slate text-xl font-semibold sm:text-3xl mb-20'>Other Noteworthy Projects</h2>
+      <h2 className='text-center text-lightest-slate text-xl font-semibold sm:text-3xl my-20'>Other Noteworthy Projects</h2>
       <ProjectList />
       <GetInTouch />
       <Footer />

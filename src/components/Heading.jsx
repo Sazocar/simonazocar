@@ -2,7 +2,7 @@ const Heading = ({ number, text, width }) => {
   return (
     <header
       className={`mt-24 mb-8 flex flex-row items-center sm:justify-start justify-center ${
-        width ? `sm:${width} mx-auto` : ''
+        width ? `sm:${width} sm:mx-auto` : ''
       }`}
     >
       <h2 className='text-2xl px-3 whitespace-nowrap font-semibold sm:w-auto text-lightest-slate md:text-3xl'>

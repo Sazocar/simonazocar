@@ -1,16 +1,25 @@
-import featureProjectsData from '@/data/featureProjectsData'
-import FeatureProject from './FeatureProject'
+import { useState, useEffect } from 'react'
 import Heading from './Heading'
-
-// Make a new card for mobile size
+import FeatureProjectList from '@/containers/FeatureProjectList'
+import MobileFeatureProjectList from '@/containers/MobileFeatureProjectList'
 
 const FeatureSection = () => {
+  const [isLargeScreen, setIsLargeScreen] = useState(false)
+
+  // Use useEffect to update the state based on the current screen size
+  useEffect(() => {
+    function handleResize() {
+      setIsLargeScreen(window.innerWidth >= 1024) // Replace 1024 with your desired breakpoint
+    }
+    handleResize() // Call the function initially to set the state
+    window.addEventListener('resize', handleResize)
+    return () => window.removeEventListener('resize', handleResize)
+  }, [])
+
   return (
     <section className='sm:px-24 box-border container mx-auto bg-navy'>
       <Heading number='03' text="Some Things I've Built" />
-      {featureProjectsData.map((project, index) => (
-        <FeatureProject key={project.title} project={project} index={index} />
-      ))}
+      {isLargeScreen ? <FeatureProjectList /> : <MobileFeatureProjectList />}
     </section>
   )
 }
