@@ -2,9 +2,7 @@ import Link from 'next/link'
 import ProjectButtonContainer from '@/containers/ProjectButtonContainer'
 import Image from 'next/image'
 
-// Make a new card for mobile size
-
-const MobileFeatureProject = ({ project, index }) => {
+const MobileFeatureProject = ({ project }) => {
   const { title, description, tags, repo, demo, image } = project
 
   return (
