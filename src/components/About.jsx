@@ -84,10 +84,7 @@ const About = () => {
             </ul>
             <ul>
               {technologies2.map((item) => (
-                <li
-                  key={item.name}
-                  className='flex flex-row my-2 items-center'
-                >
+                <li key={item.name} className='flex flex-row my-2 items-center'>
                   <svg
                     viewBox='0 0 20 20'
                     fill='currentColor'
@@ -125,7 +122,4 @@ const About = () => {
 }
 
 export default About
-
-
-
 
