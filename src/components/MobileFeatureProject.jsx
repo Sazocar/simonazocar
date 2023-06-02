@@ -8,7 +8,7 @@ const MobileFeatureProject = ({ project }) => {
   return (
     <section
       className={
-        'mx-auto w-11/12 sm:w-full rounded bg-dark-blue flex flex-col justify-between mb-12'
+        'mx-auto w-10/12 sm:w-full rounded bg-dark-blue flex flex-col justify-between mb-12'
       }
     >
       <Link
