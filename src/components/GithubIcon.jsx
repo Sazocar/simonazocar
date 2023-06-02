@@ -6,6 +6,7 @@ const GithubIcon = ({ repo }) => {
       href={repo}
       target='__blank'
       className='w-6 text-slate hover:text-green transition hover:ease-linear duration-500 hover:cursor-pointer'
+      legacyBehavior
     >
       <svg
         xmlns='http://www.w3.org/2000/svg'
