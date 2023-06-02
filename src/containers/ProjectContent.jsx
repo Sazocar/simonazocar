@@ -14,15 +14,12 @@ const ProjectContent = ({ project, index }) => {
       <h3 className='code text-xs text-green'>Feature Project</h3>
       <h1 className='text-3xl mt-2 text-lightest-slate'>{title}</h1>
       <div
-        className={
-          index % 2 === 0
-            ? 'mt-4 w-full text-end z-40 text-slate rounded bg-dark-blue p-6 hover:drop-shadow-2xl transition hover:ease-in duration-300 drop-shadow-sm'
-            : 'mt-4 w-full text-start z-40 text-slate rounded bg-dark-blue p-6 hover:drop-shadow-2xl transition hover:ease-in duration-300 drop-shadow-sm'
-        }
+        className={`mt-4 w-full z-40 text-slate rounded bg-dark-blue p-6 hover:drop-shadow-2xl transition hover:ease-in duration-300 drop-shadow-sm 
+        ${index % 2 === 0 ? 'text-end' : 'text-start'}`}
       >
         <p>{description}</p>
       </div>
-      <ul className='code text-xs text-slate flex flex-wrap	flex-row gap-x-5 mt-6'>
+      <ul className='code text-xs text-slate flex flex-wrap flex-row gap-x-5 w-4/5 mt-6'>
         {tags.map((tag) => (
           <li key={tag}>{tag}</li>
         ))}
@@ -35,5 +32,4 @@ const ProjectContent = ({ project, index }) => {
 }
 
 export default ProjectContent
-
 

@@ -15,7 +15,7 @@ const FormationDescription = ({ formationData, selectedJobIndex }) => {
       ))}
       <span className='text-green'>{` @ ${formationData[selectedJobIndex].institution}`}</span>
       <h2 className='code mt-2 text-xs'>
-        {formationData[selectedJobIndex].date.join(' ⎯ ')}
+        {formationData[selectedJobIndex].date.join(' - ')}
       </h2>
       <ul className='mt-4 list-none h-auto'>
         {formationData[selectedJobIndex]?.description.map((item) => (
