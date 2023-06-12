@@ -8,10 +8,12 @@ import ProjectList from '@/containers/ProjectList'
 import GetInTouch from '@/components/GetInTouch'
 import Footer from '@/components/Footer'
 import ExperienceSection from '@/containers/ExperienceSection'
+import { Fade } from 'react-awesome-reveal'
 
 export default function Home() {
 
   const [openModal, setOpenModal] = useState(false)
+
 
   return (
     <>
@@ -21,16 +23,18 @@ export default function Home() {
         <meta name='viewport' content='width=device-width, initial-scale=1' />
         <link rel='icon' href='/favicon.ico' />
       </Head>
-      <NavBar openModal={openModal} setOpenModal={setOpenModal}/>
-      <Description />
-      <About />
-      {/* Formation Container */}
-      <ExperienceSection />
-      <FeatureSection />
-      <h2 className='text-center text-lightest-slate text-xl font-semibold sm:text-3xl my-20'>Other Noteworthy Projects</h2>
-      <ProjectList />
-      <GetInTouch />
-      <Footer />
+      <Fade delay={500} triggerOnce duration={1500} damping={0.5} fraction={0.1}>      
+        <NavBar openModal={openModal} setOpenModal={setOpenModal}/>
+        <Description />
+        <About />
+        {/* Formation Container */}
+        <ExperienceSection />
+        <FeatureSection />
+        <h2 className='text-center text-lightest-slate text-xl font-semibold sm:text-3xl my-20'>Other Noteworthy Projects</h2>
+        <ProjectList />
+        <GetInTouch />
+        <Footer />
+      </Fade>
     </>
   )
 }
