@@ -18,7 +18,10 @@ const technologies2 = [
 
 const About = () => {
   return (
-    <section className='flex flex-col sm:px-24 container center mx-auto justify-center bg-navy'>
+    <section
+      id='about'
+      className='flex flex-col sm:px-24 container center mx-auto justify-center bg-navy'
+    >
       <Heading number='01' text='About Me' />
       <div className='mx-auto z-10 flex lg:flex-row lg:gap-x-20 flex-col justify-between items-center gap-y-10'>
         <section className='text-slate text-base w-full lg:w-7/12 md:text-lg px-6'>

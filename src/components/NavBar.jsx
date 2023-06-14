@@ -2,12 +2,13 @@ import { Disclosure } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 import ActionButton from './ActionButton'
 import Image from 'next/image'
+import { Link } from 'react-scroll'
 
 const navigation = [
-  { name: 'About', href: '#', current: true },
-  { name: 'Experience', href: '#', current: false },
-  { name: 'Work', href: '#', current: false },
-  { name: 'Contact', href: '#', current: false },
+  { name: 'About', ref: 'about', current: true },
+  { name: 'Experience', ref: 'experience', current: false },
+  { name: 'Work', ref: 'work', current: false },
+  { name: 'Contact', ref: 'contact', current: false },
   { name: <ActionButton text='Resume' /> },
 ]
 
@@ -61,17 +62,20 @@ const NavBar = ({ openModal, setOpenModal }) => {
                 <div className='hidden md:ml-6 md:block'>
                   <div className='flex'>
                     {navigation.map((item, index) => (
-                      <a
+                      <Link
                         key={item.name}
-                        href={item.href}
-                        className='code text-slate flex md:justify-center hover:text-green transition hover:ease-in duration-300  rounded-md px-3 items-center py-2 text-sm text-xs'
+                        to={item.ref}
+                        spy={true}
+                        smooth={true}
+                        duration={500}
+                        className='code cursor-pointer text-slate flex md:justify-center hover:text-green transition hover:ease-in duration-300  rounded-md px-3 items-center py-2 text-sm text-xs'
                         aria-current={item.current ? 'page' : undefined}
                       >
                         <span className='code text-xs text-green mr-1'>
                           {index !== 4 ? `0${index + 1}.` : null}
                         </span>
                         {index !== 4 ? item.name : null}
-                      </a>
+                      </Link>
                     ))}
                   </div>
                 </div>
@@ -92,6 +96,7 @@ const NavBar = ({ openModal, setOpenModal }) => {
                 <Disclosure.Button
                   key={item.name}
                   as='a'
+                  id={item.name}
                   href={item.href}
                   className='code text-slate flex  justify-center hover:text-green transition hover:ease-in duration-300  rounded-md px-3 items-center py-2 text-sm text-lg'
                 >
