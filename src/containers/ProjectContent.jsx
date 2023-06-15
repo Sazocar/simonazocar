@@ -14,7 +14,7 @@ const ProjectContent = ({ project, index }) => {
       <h3 className='code text-xs text-green'>Feature Project</h3>
       <h1 className='text-3xl mt-2 text-lightest-slate'>{title}</h1>
       <div
-        className={`mt-4 w-full z-40 text-slate rounded bg-dark-blue p-6 hover:drop-shadow-2xl transition hover:ease-in duration-300 drop-shadow-sm 
+        className={`mt-4 w-full text-slate rounded bg-dark-blue p-6 hover:drop-shadow-2xl transition hover:ease-in duration-300 drop-shadow-sm 
         ${index % 2 === 0 ? 'text-end' : 'text-start'}`}
       >
         <p>{description}</p>

@@ -23,7 +23,7 @@ const About = () => {
       className='flex flex-col sm:px-24 container center mx-auto justify-center bg-navy'
     >
       <Heading number='01' text='About Me' />
-      <div className='mx-auto z-10 flex lg:flex-row lg:gap-x-20 flex-col justify-between items-center gap-y-10'>
+      <div className='mx-auto flex lg:flex-row lg:gap-x-20 flex-col justify-between items-center gap-y-10'>
         <section className='text-slate text-base w-full lg:w-7/12 md:text-lg px-6'>
           <p className='my-4 w-full '>
             I am a software engineering student at{' '}
@@ -107,7 +107,7 @@ const About = () => {
         </section>
         <div className='group relative [&>div]:hover:-translate-x-2 [&>div]:hover:-translate-y-2 [&>div]:ease-in-out [&>div]:duration-300 '>
           <Image
-            className='sm:min-w-max drop-shadow-2xl z-10 rounded w-80 sm:grayscale sm:hover:grayscale-0 sm:ease-in-out duration-300'
+            className='sm:min-w-max drop-shadow-2xl rounded w-80 sm:grayscale sm:hover:grayscale-0 sm:ease-in-out duration-300'
             width={290}
             height={290}
             priority
@@ -117,7 +117,7 @@ const About = () => {
           <span className='absolute -top-12 end-0 scale-0 transition-all rounded bg-dark-blue p-2 text-slate group-hover:scale-100'>
             ✨ Yep, this is me!
           </span>
-          <div className='absolute top-5 left-5 w-80 h-full -z-10 sm:top-5 sm:left-5 sm:w-96 sm:h-full border-green border border-4 rounded '></div>
+          <div className='absolute top-5 left-5 w-80 h-full sm:top-5 sm:left-5 sm:w-96 sm:h-full border-green border border-4 rounded '></div>
         </div>
       </div>
     </section>

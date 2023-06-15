@@ -11,15 +11,12 @@ const NavItems = ({ openModal, setOpenModal, handleClick }) => {
   ]
 
   return (
-    <div
-      className={`-z-50 relative md:flex md:flex-row lg:justify-center items-center pr-2 md:ml-6 md:pr-0 
-      ${openModal ? 'relative' : 'flex-row'}`}
-    >
-      <div className={`md:ml-6 md:block ${openModal ? 'flex' : 'hidden'}`}>
+    <div className={`${openModal ? '' : 'flex-row'}`}>
+      <div className={`md:flex ${openModal ? 'flex' : 'hidden'}`}>
         <div
           className={`flex ${
             openModal
-              ? 'bg-navy flex flex-col justify-center items-center absolute inset-0 top-32'
+              ? 'bg-navy w-screen flex flex-col justify-center items-center mx-auto absolute inset-x-0 mt-6 py-12'
               : 'flex-row'
           }`}
         >
@@ -47,7 +44,4 @@ const NavItems = ({ openModal, setOpenModal, handleClick }) => {
 }
 
 export default NavItems
-
-
-
 

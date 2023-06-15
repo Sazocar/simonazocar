@@ -20,7 +20,7 @@ const MobileFeatureProject = ({ project }) => {
           width={1200}
           height={1200}
           sizes='100vw'
-          className='rounded-tr rounded-tl sm:block hover:drop-shadow-2xl transition hover:ease-in duration-300 drop-shadow-sm'
+          className='rounded-tr z-0 rounded-tl sm:block hover:drop-shadow-2xl transition hover:ease-in duration-300 drop-shadow-sm'
           alt={title}
           src={image}
         />

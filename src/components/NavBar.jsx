@@ -9,8 +9,8 @@ const NavBar = ({ openModal, setOpenModal }) => {
   }
   return (
     <>
-      <div className='w-full fixed top-0 left-0 right-0 -z-50  mx-auto py-4 px-4 md:px-6 lg:px-8 justify-between'>
-        <div className='flex h-16 items-center justify-between'>
+      <div className='w-full top-0 z-50 left-0 right-0 bg-navy  mx-auto py-4 px-4 justify-between'>
+        <div className='flex w-full h-16 items-center justify-between'>
           <div className='flex items-center justify-center md:items-stretch md:justify-start'>
             <div className='flex flex-shrink-0 items-center'>
               <Image
@@ -44,39 +44,11 @@ const NavBar = ({ openModal, setOpenModal }) => {
             )}
           </div>
 
-          {/* <div className='block md:hidden'>
-            {openModal ? (
-              <NavItems
-                openModal={openModal}
-                setOpenModal={setOpenModal}
-                handleClick={toggleModal}
-              />
-            ) : null}
-          </div> */}
         </div>
       </div>
-
-      {/* <div className='2xl:code hidden bg-navy md:block flex md:items-center md:justify-center space-y-1 px-2 pb-3 pt-2'>
-        {navigation.map((item, index) => (
-          <Link
-            key={item.name}
-            to={item.ref}
-            spy={true}
-            smooth={true}
-            duration={500}
-            className='code text-slate flex cursor-pointer justify-center hover:text-green transition hover:ease-in duration-300  rounded-md px-3 items-center py-2 text-sm text-lg'
-          >
-            <span className='code text-xs text-green mr-1'>
-              {index !== 4 ? `0${index + 1}.` : null}
-            </span>
-            {item.name}
-          </Link>
-        ))}
-      </div> */}
     </>
   )
 }
 
 export default NavBar
-
 
