@@ -10,8 +10,8 @@ const FeatureProject = ({ project, index }) => {
       <div
         className={
           index % 2 === 0
-            ? 'absolute left-0 w-4/6 h-auto fill-current w-7/12 '
-            : 'absolute right-0 w-4/6 h-auto fill-current w-7/12 '
+            ? 'absolute left-0 w-4/6 h-auto fill-current'
+            : 'absolute right-0 w-4/6 h-auto fill-current'
         }
       >
         <Link

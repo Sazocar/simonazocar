@@ -31,13 +31,13 @@ const NavBar = ({ openModal, setOpenModal }) => {
           <div className='block md:hidden'>
             {openModal ? (
               <XMarkIcon
-                className='h-10 w-10 text-green'
+                className='cursor-pointer h-10 w-10 text-green'
                 aria-hidden='true'
                 onClick={toggleModal}
               />
             ) : (
               <Bars3Icon
-                className='h-10 w-10 text-green'
+                className='cursor-pointer h-10 w-10 text-green'
                 aria-hidden='true'
                 onClick={toggleModal}
               />

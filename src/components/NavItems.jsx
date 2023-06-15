@@ -27,7 +27,7 @@ const NavItems = ({ openModal, setOpenModal, handleClick }) => {
               spy={true}
               smooth={true}
               duration={500}
-              className='code cursor-pointer text-slate flex md:justify-center hover:text-green transition hover:ease-in duration-300  rounded-md px-3 items-center py-2 text-sm text-xs'
+              className='code cursor-pointer text-slate flex md:justify-center hover:text-green transition hover:ease-in duration-300  rounded-md px-3 items-center py-4 text-base sm:text-sm'
               onClick={() => setOpenModal(false)}
             >
               <span className='code text-xs text-green mr-1'>
