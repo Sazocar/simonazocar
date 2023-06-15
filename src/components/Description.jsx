@@ -3,7 +3,7 @@ import ActionButton from './ActionButton'
 
 const Description = () => {
   return (
-    <div className='h-screen flex flex-col justify-center bg-transparent container mt-20 mx-auto px-8 lg:px-36'>
+    <div className='h-screen flex flex-col z-10 justify-center bg-transparent container mx-auto px-8 lg:px-36'>
       <h3 className='code text-green text-base'>
         Hello, my name is
       </h3>
