@@ -36,4 +36,3 @@ const FeatureProject = ({ project, index }) => {
 
 export default FeatureProject
 
-
