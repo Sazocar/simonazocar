@@ -9,7 +9,7 @@ const navigation = [
   { name: 'Experience', ref: 'experience', current: false },
   { name: 'Work', ref: 'work', current: false },
   { name: 'Contact', ref: 'contact', current: false },
-  { name: <ActionButton text='Resume' /> },
+  { name: <ActionButton text='Resume' />, ref: '' },
 ]
 
 function classNames(...classes) {
@@ -69,7 +69,6 @@ const NavBar = ({ openModal, setOpenModal }) => {
                         smooth={true}
                         duration={500}
                         className='code cursor-pointer text-slate flex md:justify-center hover:text-green transition hover:ease-in duration-300  rounded-md px-3 items-center py-2 text-sm text-xs'
-                        aria-current={item.current ? 'page' : undefined}
                       >
                         <span className='code text-xs text-green mr-1'>
                           {index !== 4 ? `0${index + 1}.` : null}
@@ -87,24 +86,25 @@ const NavBar = ({ openModal, setOpenModal }) => {
           <Disclosure.Panel
             className={
               openModal
-                ? 'z-30 h-full absolute top-24 bg-navy w-full md:hidden text-center bg-navy'
-                : 'z-30 h-auto absolute top-24 bg-navy w-full md:hidden text-center bg-navy'
+                ? 'z-30 h-full absolute top-24 bg-navy w-full md:hidden text-center'
+                : 'z-30 h-auto absolute top-24 bg-navy w-full md:hidden text-center'
             }
           >
-            <div className='2xl:code md:flex md:items-center md:justify-center space-y-1 px-2 pb-3 pt-2'>
+            <div className='2xl:code bg-navy md:flex md:items-center md:justify-center space-y-1 px-2 pb-3 pt-2'>
               {navigation.map((item, index) => (
-                <Disclosure.Button
+                <Link
                   key={item.name}
-                  as='a'
-                  id={item.name}
-                  href={item.href}
-                  className='code text-slate flex  justify-center hover:text-green transition hover:ease-in duration-300  rounded-md px-3 items-center py-2 text-sm text-lg'
+                  to={item.ref}
+                  spy={true}
+                  smooth={true}
+                  duration={500}
+                  className='code text-slate flex cursor-pointer justify-center hover:text-green transition hover:ease-in duration-300  rounded-md px-3 items-center py-2 text-sm text-lg'
                 >
                   <span className='code text-xs text-green mr-1'>
                     {index !== 4 ? `0${index + 1}.` : null}
                   </span>
                   {item.name}
-                </Disclosure.Button>
+                </Link>
               ))}
             </div>
           </Disclosure.Panel>
