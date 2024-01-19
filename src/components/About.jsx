@@ -117,7 +117,7 @@ const About = () => {
           <span className='absolute -top-12 end-0 scale-0  z-10 transition-all rounded bg-dark-blue p-2 text-slate group-hover:scale-100'>
             ✨ Yep, this is me!
           </span>
-          <div className='absolute top-5 left-5 w-80 -z-10 h-full sm:top-5 sm:left-5 sm:w-96 sm:h-full border-green border-4  rounded '></div>
+          <div className='absolute top-5 left-5 w-80 -z-10 h-full sm:top-5 sm:left-5 sm:h-full border-green border-4 rounded '></div>
         </div>
       </div>
     </section>
