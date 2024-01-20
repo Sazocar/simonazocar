@@ -23,17 +23,17 @@ export default function Home() {
         <meta name='viewport' content='width=device-width, initial-scale=1' />
         <link rel='icon' href='/favicon.ico' />
       </Head>
-      <Fade delay={500} triggerOnce duration={1500} damping={0.5} fraction={0.1}>      
+      <Fade delay={500} triggerOnce duration={1500} damping={0.5} fraction={0.1}>
         <NavBar openModal={openModal} setOpenModal={setOpenModal}/>
       </Fade>
         <Description />
-        <Fade delay={500} triggerOnce duration={1500} damping={0.5} fraction={0.1}>     
+        <Fade delay={500} triggerOnce duration={1500} damping={0.5} fraction={0.1}>
           <About />
           {/* Formation Container */}
           <ExperienceSection />
         </Fade>
         <FeatureSection />
-        <Fade delay={500} triggerOnce duration={1500} damping={0.5} fraction={0.1}> 
+        <Fade delay={500} triggerOnce duration={1500} damping={0.5} fraction={0.1}>
           <h2 className='text-center text-lightest-slate text-xl font-semibold sm:text-3xl my-20'>Other Noteworthy Projects</h2>
           <ProjectList />
           <GetInTouch />

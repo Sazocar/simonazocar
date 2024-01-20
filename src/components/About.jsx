@@ -41,7 +41,7 @@ const About = () => {
             My passion for coding and interest in{' '}
             <span className='text-green'>frontend development </span>
             led me to become a{' '}
-            <span className='text-green'>Junior Frontend Developer</span>, where
+            <span className='text-green'>Frontend Developer</span>, where
             I&apos;ve been able to design and create visually appealing and
             user-friendly user interfaces for various projects.
           </p>
