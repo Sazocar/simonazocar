@@ -8,6 +8,7 @@ import ProjectList from '@/containers/ProjectList'
 import GetInTouch from '@/components/GetInTouch'
 import Footer from '@/components/Footer'
 import ExperienceSection from '@/containers/ExperienceSection'
+import WorkExperience from '@/containers/WorkExperience'
 import { Fade } from 'react-awesome-reveal'
 
 export default function Home() {
@@ -31,6 +32,7 @@ export default function Home() {
           <About />
           {/* Formation Container */}
           <ExperienceSection />
+          <WorkExperience />
         </Fade>
         <FeatureSection />
         <Fade delay={500} triggerOnce duration={1500} damping={0.5} fraction={0.1}>
