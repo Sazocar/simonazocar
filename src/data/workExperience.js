@@ -7,7 +7,6 @@ const formationData = [
     date: ['August 2025', 'Present'],
     description: [
       'Built and delivered technical solutions according to stakeholder business requirements.',
-      'Create from scratch both admin and client apps for corporate transport.',
       'Proposed and implemented scalable solutions as a Fullstack Developer.',
       `Participated in meetings with product owners, stakeholders, and the technical leader to define the best solutions for the client's needs.`
     ],
