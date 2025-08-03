@@ -4,7 +4,7 @@ const ActionButton = ({ text, onClick }) => {
   return (
     <div className='flex justify-center md:flex md:justify-start'>
       {text === 'Resume' ? (
-        <a download href='/files/resume.pdf' target='_blank'>
+        <a download href='/files/simon-azocar-resume.pdf' target='_blank'>
           <Button text={text} onClick={onClick} />
         </a>
       ) : (
@@ -15,4 +15,3 @@ const ActionButton = ({ text, onClick }) => {
 }
 
 export default ActionButton
-

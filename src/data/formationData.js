@@ -4,7 +4,7 @@ const formationData = [
     category: 'UCAB',
     title: ['Software Engineer Degree'],
     institution: 'Universidad Católica Andrés Bello',
-    date: ['September 2018', 'Present'],
+    date: ['September 2018', 'June 2025'],
     description: [
       'Programming languages like Java, JavaScript, Dart, C++, Python, and other popular programming languages.',
       'Software design and application development.',
