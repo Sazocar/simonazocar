@@ -14,21 +14,15 @@ const Description = () => {
         I build things for the web.
       </h2>
       <p className='mt-8 text-slate w-full md:w-3/5'>
-        I&apos;m a <span className='text-green'>Frontend Developer</span>{' '}
-        who likes to create clean and good looking user interfaces. I&apos;m
-        currently focused on finishing my degree as{' '}
-        <span className='text-green'>Software Engineer </span>
-        at{' '}
+        {`I'm a Software Engineer specializing in creating robust and scalable mobile and web applications. Currently my main focus is to deliver high-quality code and achieve client's objectives at `}
         <Link
-          href='https://www.ucab.edu.ve/'
+          href='https://www.venbos/'
           className=' hover:underline text-green decoration-solid'
           target='__blank'
         >
-          Universidad Católica Andrés Bello
+          Venbos.
         </Link>
-        .
       </p>
-
       <section className='mt-12'>
         <ActionButton text='Resume' />
       </section>
@@ -37,4 +31,3 @@ const Description = () => {
 }
 
 export default Description
-
