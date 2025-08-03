@@ -1,4 +1,8 @@
+import Link from "next/link"
+
 const FormationDescription = ({ formationData, selectedJobIndex }) => {
+  const formationHasUrl = formationData[selectedJobIndex]?.url ? true : false;
+
   return (
     <div className='mt-5 md:mt-0 w-full px-8 text-slate'>
       {formationData[selectedJobIndex].title.map((title) => (
@@ -13,7 +17,11 @@ const FormationDescription = ({ formationData, selectedJobIndex }) => {
             : `- ${title}`}
         </span>
       ))}
-      <span className='text-green'>{` @ ${formationData[selectedJobIndex].institution}`}</span>
+      <span className='text-green'> @ </span>
+      {formationHasUrl ? (<Link href={formationData[selectedJobIndex].url ?? ''} target="_blank" className="text-green hover:underline">{formationData[selectedJobIndex].institution}</Link>)  : (<span className="text-green">
+        {formationData[selectedJobIndex].institution}
+      </span>)}
+      
       <h2 className='code mt-2 text-xs'>
         {formationData[selectedJobIndex].date.join(' - ')}
       </h2>
@@ -43,5 +51,3 @@ const FormationDescription = ({ formationData, selectedJobIndex }) => {
 }
 
 export default FormationDescription
-
-
