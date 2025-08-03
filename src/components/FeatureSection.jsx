@@ -17,12 +17,11 @@ const FeatureSection = () => {
   }, [])
 
   return (
-    <section id='work' className='sm:px-24 pt-1 box-border container mx-auto bg-navy'>
-      <Heading number='03' text="Some Things I've Built" />
+    <section id='projects' className='sm:px-24 pt-1 box-border container mx-auto bg-navy'>
+      <Heading number='04' text="Some Things I've Built" />
       {isLargeScreen ? <FeatureProjectList /> : <MobileFeatureProjectList />}
     </section>
   )
 }
 
 export default FeatureSection
-
