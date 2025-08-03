@@ -4,8 +4,9 @@ import { Link } from 'react-scroll'
 const NavItems = ({ openModal, setOpenModal, handleClick }) => {
   const navigation = [
     { name: 'About', ref: 'about', current: true },
-    { name: 'Experience', ref: 'experience', current: false },
+    { name: 'Education', ref: 'education', current: false },
     { name: 'Work', ref: 'work', current: false },
+    { name: 'Projects', ref: 'projects', current: false },
     { name: 'Contact', ref: 'contact', current: false },
     { name: <ActionButton text='Resume' />, ref: '' },
   ]
@@ -31,9 +32,9 @@ const NavItems = ({ openModal, setOpenModal, handleClick }) => {
               onClick={() => setOpenModal(false)}
             >
               <span className='code text-xs text-green mr-1'>
-                {index !== 4 ? `0${index + 1}.` : null}
+                {index !== 5 ? `0${index + 1}.` : null}
               </span>
-              {index !== 4 ? item.name : null}
+              {index !== 5 ? item.name : null}
             </Link>
           ))}
           <ActionButton text='Resume' />
@@ -44,4 +45,3 @@ const NavItems = ({ openModal, setOpenModal, handleClick }) => {
 }
 
 export default NavItems
-
