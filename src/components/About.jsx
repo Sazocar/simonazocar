@@ -26,7 +26,7 @@ const About = () => {
       <div className="mx-auto flex z-10 lg:flex-row lg:gap-x-20 flex-col justify-between items-center gap-y-10">
         <section className="text-slate text-base w-full lg:w-7/12 md:text-lg px-6">
           <p className="my-4 w-full ">
-            I am a software engineering student at{' '}
+            I am a Software Engineer from{' '}
             <span className="text-green">
               <Link
                 href="https://www.ucab.edu.ve/"
@@ -35,7 +35,7 @@ const About = () => {
               >
                 {' '}
                 Universidad Católica Andrés Bello
-              </Link>
+            </Link>
               .
             </span>{' '}
             My passion for coding and interest in{' '}
